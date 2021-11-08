@@ -7,7 +7,7 @@ $(document).ready(function () {
   function administratorList() {
     // Call Web API to get a list of administrators
     $.ajax({
-      url: 'http://a73e3537f79c1490e8982e58c5ebf424-bc22ad9319137302.elb.us-east-1.amazonaws.com/administrator/getall',
+      url: 'http://a338119db9b4345fc9d0247c8cb2df26-1958683681.ap-south-1.elb.amazonaws.com/getall',
       type: 'POST',
       dataType: 'json',
       success: function (administrators) {
@@ -56,7 +56,7 @@ $(document).ready(function () {
     console.log(administrator)
     // Call Web API to add a new administrator
     $.ajax({
-      url: "http://a73e3537f79c1490e8982e58c5ebf424-bc22ad9319137302.elb.us-east-1.amazonaws.com/administrator/new",
+      url: "http://a338119db9b4345fc9d0247c8cb2df26-1958683681.ap-south-1.elb.amazonaws.com/new",
       type: 'POST',
       contentType: "application/json;charset=utf-8",
       data:JSON.stringify(administrator),
